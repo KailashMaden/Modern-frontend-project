@@ -34,7 +34,7 @@
   transform: scale(0.98);
 }
 
-/* Backgrounds and colored buttons */
+/*---------------- Backgrounds and colored buttons -----------*/
 .bg-primary,
 .btn-primary {
   background-color: var(--primary-color);
@@ -53,6 +53,12 @@
   color: #fff;
 }
 
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
 .bg-primary a,
 .btn-primary a,
 .bg-secondary a,
@@ -62,13 +68,24 @@
   color: #fff;
 }
 
-.bg-light,
-.btn-light {
-  background-color: var(--light-color);
-  color: #333;
+/*----------------------------- Text-colors ---------------------*/
+.text-primary {
+  color: var(--primary-color);
 }
 
-/* Text sizes */
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+/*---------------------------- Text sizes -----------------------*/
 .lead {
   font-size-adjust: 20px;
 }
@@ -91,6 +108,28 @@
 
 .text-center {
   text-align: center;
+}
+
+/*--------------------------------- Alert -----------------------*/
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
 }
 
 .flex {
@@ -153,7 +192,6 @@
 .m-5 {
   margin: 4rem;
 }
-
 
 /* Padding */
 .py-1 {
